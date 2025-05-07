@@ -11,7 +11,7 @@ from transformers import pipeline
 
 load_dotenv()
 HF_TOKEN = os.getenv("HUGGINGFACEHUB_API_TOKEN")
-assert HF_TOKEN, "❌ Hugging Face token not found. Make sure it's in your .env file."
+assert HF_TOKEN, "Hugging Face token not found. Make sure it's in your .env file."
 
 PDF_PATH = "support-policy.pdf"
 LLM_MODEL = "tiiuae/falcon-rw-1b"
